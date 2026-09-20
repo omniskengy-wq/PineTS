@@ -134,6 +134,7 @@ dist
 
 
 .DS_Store
+Thumbs.db
 .env
 *.code-workspace
 tests/bak
