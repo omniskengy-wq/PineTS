@@ -132,6 +132,14 @@ These require upfront discussion to ensure alignment with project direction and 
 
 ## Development Workflow
 
+### Continuous Integration
+
+GitHub Actions is the primary routine CI, diagnostics, and certification surface while
+the Syntharian self-hosted Linux runner fleet is healthy. The `CI` workflow runs the
+repository test and development-build commands on that fleet. CircleCI remains an
+independent secondary clean-room certification and fallback surface; its test and
+production-build jobs use the same repository-native commands and must remain green.
+
 ### Initial Setup
 
 ```bash
